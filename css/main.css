@@ -201,9 +201,11 @@ ul {
     margin-left: 20px;
     margin-right: 20px;
 }
-.wrapper img{
+
+.wrapper img {
     width: 200px;
 }
+
 @media (max-width:767px) {
     .wrapper {
         grid-template-columns: minmax(200px, 1fr);
@@ -214,3 +216,93 @@ ul {
 }
 
 /* #endregion Content */
+
+/* #region Welcome Widget */
+.welcome {
+    overflow: hidden;
+}
+
+.welcome .intro {}
+
+.welcome .intro img {
+    width: 170px;
+    margin-bottom: -10px;
+}
+
+.welcome .avatar {
+    width: 64px;
+    border: 1px solid white;
+    margin-left: 30px;
+    margin-top: -32px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px var(--grey-color);
+    padding: 0;
+}
+
+.welcome .body {
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+
+}
+
+.welcome .body>div {
+    flex: 1;
+}
+
+.welcome .visit {
+    margin: 0 10px 10px auto;
+    padding: 2px;
+    transition: all ease 0.3s;
+}
+
+.welcome .visit:hover {
+    background-color: var(--blue-alt-color);
+}
+
+@media (max-width:767px) {
+
+
+    .welcome .intro {
+        padding-bottom: 30px;
+    }
+
+    .welcome .avatar {
+        margin-left: 0;
+
+    }
+
+    .welcome .body {
+        border-top: 1px solid #eee;
+        border-bottom: 1px solid #eee;
+
+    }
+
+    .welcome .body>div:not(:last-child) {
+        margin-bottom: 20PX;
+    }
+
+    .welcome .visit {
+        margin: 0 10px 10px auto;
+        padding: 2px;
+        transition: all ease 0.3s;
+    }
+
+    .welcome .visit:hover {
+        background-color: var(--blue-alt-color);
+    }
+}
+
+/* #endregion Welcome Widget */
+
+/*#region Quick Draft */
+.quick-draft textarea{
+    resize:none;
+    min-height:180px;
+}
+.quick-draft .save{
+    margin-left: auto;
+    transition:0.3s;
+    cursor: pointer;    
+}
+
+/*#endregion Quick Draft */
